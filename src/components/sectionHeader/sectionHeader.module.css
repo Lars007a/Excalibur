@@ -1,0 +1,55 @@
+.sectionHeader {
+  background-image: url(/src/assets/notSortedImgs/bagground_img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 300px;
+  align-content: center;
+}
+
+.sectionHeader h1 {
+  font-size: 60px;
+  font-family: "Irish Grover", serif;
+}
+
+.sectionHeader h2 {
+  font-size: 40px;
+  font-family: "Itim", serif;
+}
+
+.sectionHeader h1,
+.sectionHeader h2 {
+  color: white;
+  text-align: center;
+}
+
+/* Responsive - Tablet */
+@media screen and (max-width: 768px) {
+  .sectionHeader {
+    height: 250px;
+  }
+
+  .sectionHeader h1 {
+    font-size: 50px;
+  }
+
+  .sectionHeader h2 {
+    font-size: 30px;
+  }
+}
+
+/* Responsive - Mobile */
+@media screen and (max-width: 700px) {
+  .sectionHeader {
+    height: 200px;
+  }
+
+  .sectionHeader h1 {
+    font-size: 40px;
+  }
+
+  .sectionHeader h2 {
+    font-size: 25px;
+  }
+}
