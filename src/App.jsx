@@ -8,6 +8,7 @@ import Member from "./pages/member/Member.jsx";
 import Contact from "./pages/contact/Contact.jsx";
 import Profile from "./pages/profile/Profile.jsx";
 import { useRoutes } from "react-router-dom";
+import Footer from "./components/footer/Footer.jsx";
 
 function App() {
   let routes = useRoutes([
@@ -21,7 +22,12 @@ function App() {
     { path: "/profile", element: <Profile /> },
   ]);
 
-  return <>{routes}</>;
+  return (
+    <>
+      <div> {routes}</div>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
