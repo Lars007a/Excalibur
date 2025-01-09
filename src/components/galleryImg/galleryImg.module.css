@@ -1,0 +1,17 @@
+.galleryImg img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s;
+}
+
+.galleryImg img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 350px) {
+  .galleryImg img {
+    width: 90%;
+  }
+}
