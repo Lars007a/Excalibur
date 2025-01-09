@@ -20,8 +20,9 @@
 
   & .navLinks {
     font-family: "Irish Grover", serif;
+    font-family: "Jacquard 24", serif;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   & .navLinks a {
