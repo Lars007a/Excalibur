@@ -1,0 +1,18 @@
+.btn {
+  background-color: #005390;
+  color: white;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+  font-family: "Irish Grover", serif;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #063b61;
+}
