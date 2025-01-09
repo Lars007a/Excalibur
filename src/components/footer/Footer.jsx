@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
+import styles from "./footer.module.css";
 
 const Footer = () => {
   return (
-    <footer>
-      <div>
+    <footer className={styles.footer}>
+      <div className={styles.footerInfo}>
         <h3>Om os</h3>
         <p>
           Rollespil arrangeres af Excalibur, som er en forening drevet af
@@ -13,18 +14,19 @@ const Footer = () => {
           igennem Bifrost, som er landsforeningen for kreativ udvikling af børn
           og unge.
         </p>
+        <img src="/logo.png" alt="logo" />
+      </div>
+      <div className={styles.footerLinks}>
+        <Link to="/News">Nyheder</Link>
+        <Link to="/Arrangements">Arrangementer</Link>
+        <Link to="/Info">Info</Link>
+        <Link to="/Gallery">Gallery</Link>
+        <Link to="/Member">Bliv medlem</Link>
+        <Link to="/Contact">Kontakt</Link>
       </div>
       <div>
-        <Link to="">Nyheder</Link>
-        <Link to="">Arrangementer</Link>
-        <Link to="">Info</Link>
-        <Link to="">Gallery</Link>
-        <Link to="">Bliv medlem</Link>
-        <Link to="">Kontakt</Link>
-      </div>
-      <div>
-        <p>Følg os her</p>
-        <div>
+        <strong>Følg os her</strong>
+        <div className={styles.footerIcons}>
           <Link to="https://www.facebook.com">
             <FaFacebook />
           </Link>
