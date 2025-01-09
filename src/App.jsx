@@ -7,8 +7,10 @@ import Gallery from "./pages/gallery/Gallery.jsx";
 import Member from "./pages/member/Member.jsx";
 import Contact from "./pages/contact/Contact.jsx";
 import Profile from "./pages/profile/Profile.jsx";
-import { useRoutes } from "react-router-dom";
+import { useRoutes, useLocation } from "react-router-dom";
 import Footer from "./components/footer/Footer.jsx";
+import Navbar from "./components/navbar/navbar.jsx";
+import { useState } from "react";
 
 function App() {
   let routes = useRoutes([
@@ -22,8 +24,19 @@ function App() {
     { path: "/profile", element: <Profile /> },
   ]);
 
+  let addNav = false;
+
+  const location = useLocation();
+
+  if (location.pathname != "/") {
+    addNav = true;
+  } else {
+    addNav = false;
+  }
+
   return (
     <>
+      {addNav ? <Navbar /> : ""}
       <div> {routes}</div>
       <Footer />
     </>
