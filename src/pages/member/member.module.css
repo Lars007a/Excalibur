@@ -2,4 +2,46 @@
 
 .memberInfo {
   background-color: #c26831;
-  width:
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+.memberInfo h2 {
+  text-align: center;
+  font-family: "Irish Grover", serif;
+  font-size: 40px;
+}
+.memberInfo p {
+  padding: 14px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.registrationForm {
+  background-color: #c26831;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+.registrationForm h3 {
+  font-family: "Irish Grover", serif;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.registrationForm a {
+  background-color: #005390;
+  padding: 10px 80px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: "Jacquard 24", serif;
+  font-size: 22px;
+}
+.registrationForm a:hover {
+  background-color: white;
+  color: #005390;
+  border: 1px solid black;
+}
