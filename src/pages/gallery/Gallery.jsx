@@ -5,8 +5,8 @@ const Gallery = () => {
   return (
     <>
       <Sectionheader title={"Galleri"} subtitle={"Se vores billeder!"} />
-
-      <GalleryGrid imgArray={imgs} />
+      {/*       <GalleryGrid imgArray={imgs} />
+       */}{" "}
     </>
   );
 };
