@@ -1,0 +1,79 @@
+/* Container der holder på galleriet, gjort responsiv. */
+.gridContainer {
+  margin: 0 auto;
+  width: 1400px;
+
+  /* så griden sig selv bliver centreret */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1500px) {
+  .gridContainer {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .gridContainer {
+    width: 90%;
+  }
+}
+
+/* Griden der viser bilderne. */
+.grid {
+  display: grid;
+  gap: 25px;
+}
+
+/* Responsiveness til  */
+@media (min-width: 1400px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1400px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1050px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  /* Til sidst bliver det skiftet fra grid til flexbox, hvor det kører flex-column. */
+  .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* styling for gallery boxen, den der har baggrundsfarven og omfavner containeren og griden og hele galleriet... */
+.galleryBox {
+  padding: 50px 0px;
+  background-color: #c26831;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.grid:has(.errorTxt) {
+  display: block;
+}
+
+.galleryBox:has(.errorTxt) {
+  padding: 30px 0px;
+}
+
+.errorTxt {
+  text-align: center;
+  color: white;
+  font-family: "Irish Grover", serif;
+}
