@@ -1,5 +1,5 @@
 import styles from "./events.module.css";
-const EventsHero = () => {
+const EventsHero = ({ eventsHeroImg }) => {
   return (
     <header
       className={styles.eventsHero}
