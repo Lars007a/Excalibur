@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 .footer {
-  width: 1400px;
-  margin: 0 auto;
+  max-width: 100%;
   padding: 80px;
   background-color: black;
   color: white;
@@ -40,8 +39,12 @@
   font-size: 28px;
   font-family: "Jacquard 24", serif;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
-
+.footerLinks a:hover {
+  color: #005390;
+  text-decoration: underline;
+}
 .footer strong {
   font-size: 28px;
   font-family: "Quicksand", serif;
@@ -55,7 +58,23 @@
 .footerIcons a {
   color: white;
   font-size: 30px;
+  transition: color 0.3s ease;
 }
 .footerIcons a:hover {
   color: #005390;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 80px;
+  }
+  .footerLinks {
+    align-items: center;
+  }
+  .footer strong {
+    display: flex;
+    justify-content: center;
+    font-family: "Jacquard 24", serif;
+  }
 }
