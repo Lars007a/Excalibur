@@ -11,10 +11,11 @@
 .sectionHeader h1 {
   font-size: 60px;
   font-family: "Irish Grover", serif;
+  margin-bottom: 12px;
 }
 
 .sectionHeader h2 {
-  font-size: 40px;
+  font-size: 22px;
   font-family: "Itim", serif;
 }
 
@@ -35,7 +36,7 @@
   }
 
   .sectionHeader h2 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -50,6 +51,6 @@
   }
 
   .sectionHeader h2 {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
