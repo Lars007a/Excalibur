@@ -1,8 +1,12 @@
 import styles from "./member.module.css";
-import { Link } from "react-router-dom";
+import Sectionheader from "../../components/sectionHeader/SectionHeader.jsx";
+import pdfFile from "../../assets/Indmeldingsblanket.pdf";
+
 const Member = () => {
   return (
     <>
+      <Sectionheader />
+
       <div className={styles.memberInfo}>
         <h2>Bliv medlem</h2>
         <p>
@@ -24,10 +28,11 @@ const Member = () => {
           og de knapt 50 andre lokalforeninger på landsforeningen » bifrost.dk.
         </p>
       </div>
-
       <div className={styles.registrationForm}>
         <h3>Download indmeldings-blanket</h3>
-        <Link to="">Download</Link>
+        <a href={pdfFile} download>
+          Download
+        </a>
       </div>
     </>
   );

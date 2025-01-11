@@ -1,26 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
 
 .memberInfo {
-  background-color: #c26831;
+  background-image: url(/src/assets/notSortedImgs/bagground_img.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+
   width: 100%;
+  color: white;
   margin: 0 auto;
   padding: 20px;
-  color: white;
-  margin-bottom: 80px;
-  margin-top: 80px;
+}
+.logo {
+  width: 200px;
+  min-height: 200px;
 }
 .memberInfo h2 {
+  background-color: #c26831;
+  width: 100%;
   text-align: center;
   font-family: "Irish Grover", serif;
   font-size: 40px;
 }
 .memberInfo p {
+  background-color: #c26831;
   padding: 14px;
   font-size: 18px;
   line-height: 24px;
 }
 .registrationForm {
   background-color: #c26831;
+  margin-top: 80px;
   text-align: center;
   color: white;
   padding: 20px;
