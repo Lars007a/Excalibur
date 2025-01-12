@@ -4,7 +4,7 @@ import eventsHeroImg from "../../assets/notSortedImgs/bagground_img.jpg";
 const Arrangements = () => {
   return (
     <article>
-      <EventsHero headerImg={eventsHeroImg} />
+      <EventsHero eventsHeroImg={eventsHeroImg} />
     </article>
   );
 };
