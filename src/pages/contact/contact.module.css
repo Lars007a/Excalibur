@@ -1,0 +1,60 @@
+.contactsContainer {
+  background-image: url(/src/assets/notSortedImgs/bagground_img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contactsContainer h2 {
+  font-size: 60px;
+  font-family: "Irish Grover", serif;
+  margin-bottom: 12px;
+}
+
+.contactsContainer h4 {
+  font-size: 22px;
+  font-family: "Itim", serif;
+  text-align: center;
+}
+
+.contactInfo {
+  background-color: #c26831;
+  padding: 40px;
+  margin-top: 40px;
+  font-family: "Itim", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactRow {
+  display: flex;
+  justify-content: center;
+  gap: 180px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.contactInfo h3 {
+  color: #005390;
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+.contactInfo p {
+  font-size: 16px;
+  text-align: start;
+  line-height: 27px;
+}
+
+.contactInfo strong {
+  color: #005390;
+  font-size: 20px;
+}
+
+.openingHours {
+  margin-top: 20px;
+}

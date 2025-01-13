@@ -50,7 +50,7 @@
   gap: 5px;
   font-family: "Irish Grover", serif;
   color: white;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .profileInput:nth-child(1) {
@@ -111,6 +111,16 @@
 
 .actionIcon:last-of-type {
   color: white;
+}
+
+.actionIcon:hover {
+  color: black;
+  transition: all 200ms ease-in-out;
+}
+
+.editIcon:hover {
+  color: black;
+  transition: all 200ms ease-in-out;
 }
 
 @media screen and (max-width: 990px) {
