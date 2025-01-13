@@ -1,0 +1,51 @@
+.eventsHero {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.eventsContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.eventsSectionItem {
+  background-color: #c26831;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.eventsSection {
+  background-color: #c26831;
+  padding: 20px;
+  border-radius: 10px;
+}
+.eventsSection h1,
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.playerImg img {
+  max-width: 200px;
+}
+
+.gridEvents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  margin-top: 50px;
+}
+
+.eventsItem {
+  padding: 20px;
+  background-color: #c26831;
+  border-radius: 10px;
+}
+li {
+  list-style-type: none;
+}
