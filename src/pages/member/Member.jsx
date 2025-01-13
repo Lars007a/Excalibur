@@ -1,6 +1,5 @@
 import styles from "./member.module.css";
 import Sectionheader from "../../components/sectionHeader/SectionHeader.jsx";
-import pdfFile from "../../assets/Indmeldingsblanket.pdf";
 
 const Member = () => {
   return (
@@ -30,7 +29,7 @@ const Member = () => {
       </div>
       <div className={styles.registrationForm}>
         <h3>Download indmeldings-blanket</h3>
-        <a href={pdfFile} download>
+        <a href="/Indmeldingsblanket.pdf" download>
           Download
         </a>
       </div>
