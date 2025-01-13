@@ -38,6 +38,7 @@ export default function navar() {
           </div>
 
           <div
+            onClick={onHamburgerClick}
             className={`${styles.navLinks} ${
               showMobileMenu ? styles.mobileActive : ""
             }`}
