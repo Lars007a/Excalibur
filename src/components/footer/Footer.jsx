@@ -10,4 +10,32 @@ const Footer = () => {
         <h3>Om os</h3>
         <p>
           Rollespil arrangeres af Excalibur, som er en forening drevet af
-          friv
+          frivillige og entusiastiske rollespillere. Excalibur er medlem af DUF
+          igennem Bifrost, som er landsforeningen for kreativ udvikling af børn
+          og unge.
+        </p>
+        <img src="/logo.png" alt="logo" />
+      </div>
+      <div className={styles.footerLinks}>
+        <Link to="/News">Nyheder</Link>
+        <Link to="/Arrangements">Arrangementer</Link>
+        <Link to="/Info">Info</Link>
+        <Link to="/Gallery">Gallery</Link>
+        <Link to="/Member">Bliv medlem</Link>
+        <Link to="/Contact">Kontakt</Link>
+      </div>
+      <div>
+        <strong>Følg os her</strong>
+        <div className={styles.footerIcons}>
+          <Link to="https://www.facebook.com">
+            <FaFacebook />
+          </Link>
+          <Link to="https://www.instagram.com">
+            <FaInstagramSquare />
+          </Link>
+        </div>
+      </div>
+    </footer>
+  );
+};
+export default Footer;

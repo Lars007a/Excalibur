@@ -1,4 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
 
 .membersContainer {
-  background-image: url(/src/as
+  background-image: url(/src/assets/notSortedImgs/bagground_img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 80px 0;
+}
+.membersContainer img {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+.memberInfo {
+  background-color: #c26831;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.memberInfo h2 {
+  text-align: center;
+  font-family: "Irish Grover", serif;
+  font-size: 40px;
+}
+.memberInfo p {
+  width: 1080px;
+  margin: 0 auto;
+  padding: 18px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.registrationForm {
+  background-color: #c26831;
+  text-align: center;
+  color: white;
+  padding: 40px 0 60px 0;
+}
+.registrationForm h3 {
+  font-family: "Irish Grover", serif;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.registrationForm a {
+  background-color: #005390;
+  padding: 10px 80px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: "Jacquard 24", serif;
+  font-size: 22px;
+}
+.registrationForm a:hover {
+  background-color: white;
+  color: #005390;
+  border: 1px solid black;
+}
+
+/* Responsive - Mobile */
+@media screen and (max-width: 700px) {
+  .memberInfo p {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .registrationForm h3 {
+    font-size: 28px;
+  }
+}
