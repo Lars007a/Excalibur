@@ -14,8 +14,8 @@ export default function galleryGrid({ imgArray }) {
                 Ingen billeder. Kom tilbage senere.
               </p>
             ) : (
-              imgArray.forEach((element, index) => {
-                <GalleryImg img={element} key={index} />;
+              imgArray.map((element, index) => {
+                return <GalleryImg img={element} key={index} />;
               })
             )}
           </div>
