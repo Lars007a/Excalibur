@@ -50,7 +50,9 @@ export default function navar() {
             <NavLink to={"/member"}>Bliv medlem</NavLink>
             <NavLink to={"/contact"}>Kontakt</NavLink>
             <NavLink to={"/profile"}>
-              <LoginBtn />
+              <LoginBtn>
+                <p>Login</p>
+              </LoginBtn>
             </NavLink>
           </div>
         </div>
