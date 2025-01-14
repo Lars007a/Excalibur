@@ -11,6 +11,12 @@
   color: #ffffff;
   width: 80%;
 }
+.eventsContainer h1 {
+  text-align: center;
+  font-family: "Irish Grover", serif;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
 .eventsContent {
   display: flex;
   flex-direction: row;
@@ -72,7 +78,6 @@ h2 {
 li {
   list-style-type: none;
 }
-
 @media screen and (max-width: 768px) {
   .eventsHero {
     padding-top: 50px;
