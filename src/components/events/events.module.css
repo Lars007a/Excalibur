@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inder&family=Irish+Grover&family=Jacquard+24&display=swap");
 
 .eventsHero {
   padding-top: 100px;
@@ -41,7 +40,7 @@ h2 {
 
 .eventsInfo {
   font-size: 18px;
-  font-family: "Quicksand", serif;
+  font-family: "Inder", serif;
   margin-bottom: 15px;
   line-height: 1.5;
 }
