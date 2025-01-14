@@ -1,0 +1,12 @@
+.pathImg {
+  width: 100%;
+}
+
+.homePath {
+  width: 100%;
+  background-image: url(/src/assets/notSortedImgs/path3.png);
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: contain;
+  height: 2500px;
+}
