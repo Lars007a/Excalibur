@@ -15,7 +15,7 @@ const Info = () => {
       />
 
       <Bc>
-        <div style={{ display: "flex", flexDirection: "column", gap: "60px" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "80px" }}>
           <Section
             content={[
               {
