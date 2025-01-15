@@ -1,9 +1,28 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebook, FaInstagramSquare, FaArrowUp } from "react-icons/fa";
 import styles from "./footer.module.css";
 
 const Footer = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    if (window.scrollY > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footerInfo}>
@@ -35,7 +54,13 @@ const Footer = () => {
           </Link>
         </div>
       </div>
+      {isVisible && (
+        <button className={styles.scrollToTop} onClick={scrollToTop}>
+          <FaArrowUp />
+        </button>
+      )}
     </footer>
   );
 };
+
 export default Footer;

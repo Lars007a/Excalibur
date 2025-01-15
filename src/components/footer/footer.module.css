@@ -63,6 +63,31 @@
   color: #005390;
 }
 
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #005390;
+  color: #d0621c;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.scrollToTop:hover {
+  background-color: #d0621c;
+  color: #005390;
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
@@ -75,5 +100,10 @@
     display: flex;
     justify-content: center;
     font-family: "Jacquard 24", serif;
+  }
+  .scrollToTop {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
   }
 }
