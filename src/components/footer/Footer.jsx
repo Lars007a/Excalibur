@@ -55,9 +55,9 @@ const Footer = () => {
         </div>
       </div>
       {isVisible && (
-        <button className={styles.scrollToTop} onClick={scrollToTop}>
+        <Link className={styles.scrollToTop} onClick={scrollToTop}>
           <FaArrowUp />
-        </button>
+        </Link>
       )}
     </footer>
   );
