@@ -8,9 +8,8 @@ const Member = ({ memberImg }) => {
         style={{ backgroundImage: `url(${memberImg})` }}
       >
         <div className={styles.membersContainer}>
-          <img src="/logo.png" alt="logo" />
+          <h2>Bliv medlem</h2>
           <div className={styles.memberInfo}>
-            <h2>Bliv medlem</h2>
             <p>
               For at deltage i Excaliburs arrangementer skal man være medlem af
               foreningen. Et medlemskab koster 100 kr/kalenderår og giver en

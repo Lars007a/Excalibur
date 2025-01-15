@@ -7,9 +7,9 @@ const EventsHero = ({ eventsHeroImg }) => {
       style={{ backgroundImage: `url(${eventsHeroImg})` }}
     >
       <div className={styles.eventsContainer}>
+        <h1>Arrangementer i Undallslund</h1>
         <div className={styles.eventsContent}>
           <div className={styles.eventsSection}>
-            <h1>Arrangementer i Undallslund</h1>
             <p className={styles.eventsInfo}>
               Vi spiller i forårssæsonen og efterårssæsonen. Forårssæsonen går
               typisk fra starten af marts til sommerferien, og efterårssæsonen
