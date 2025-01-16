@@ -10,7 +10,7 @@ const HomeHero = () => {
         src={baggroundImg}
         alt="Picture of dirt background"
       />
-      <Link to="/Profile" className={styles.loginBtn}>
+      <Link to="/Login" className={styles.loginBtn}>
         Login
       </Link>
       <img

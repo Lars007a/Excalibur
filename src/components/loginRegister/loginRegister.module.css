@@ -1,0 +1,108 @@
+.registerContainer {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.registerContainer h1 {
+  font-family: "Cinzel", serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.registerContainer input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #bfa98c;
+  border-radius: 5px;
+  background: url("../../assets/notSortedImgs/bagground_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Cinzel", serif;
+  text-transform: lowercase;
+}
+
+.registerContainer input::placeholder {
+  text-transform: lowercase;
+  color: white;
+  opacity: 1;
+}
+
+.usernameContainer,
+.emailContainer,
+.passwordContainer {
+  margin-bottom: 15px;
+}
+
+.passwordContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.passwordContainer input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px;
+  font-size: 16px;
+  border: 2px solid #bfa98c;
+  border-radius: 5px;
+  background: url("../../assets/notSortedImgs/bagground_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: "Cinzel", serif;
+  text-transform: lowercase;
+}
+
+.passwordContainer .eyeIcon {
+  margin-left: -30px;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  transition: color 0.2s;
+}
+
+.passwordContainer .eyeIcon:hover {
+  color: #a67c52;
+}
+
+.registerContainer button {
+  background: linear-gradient(145deg, #552d15, #a67c52);
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 200ms, background 200ms;
+}
+
+.registerContainer button:hover {
+  background: linear-gradient(145deg, #774d30, #d2a572);
+  transform: translateY(-2px);
+}
+
+.registerContainer p {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.registerContainer p span {
+  text-decoration: underline;
+  color: #552d15;
+  cursor: pointer;
+}
