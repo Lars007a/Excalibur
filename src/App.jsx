@@ -7,13 +7,21 @@ import Gallery from "./pages/gallery/Gallery.jsx";
 import Member from "./pages/member/Member.jsx";
 import Contact from "./pages/contact/Contact.jsx";
 import Profile from "./pages/profile/Profile.jsx";
+import Login from "./pages/login/Login.jsx";
 import { useRoutes, useLocation } from "react-router-dom";
 import Footer from "./components/footer/Footer.jsx";
 import Navbar from "./components/navbar/navbar.jsx";
-import { useState } from "react";
 
 function App() {
-  let routes = useRoutes([
+  const location = useLocation();
+
+  /* Lowercase tilføjes da den ellers ikke kan finde Login-side */
+  const Path = location.pathname.toLowerCase();
+
+  const isLoginPage = Path === "/login";
+  const isHomePage = Path === "/";
+
+  const routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/news", element: <News /> },
     { path: "/arrangements", element: <Arrangements /> },
@@ -22,23 +30,14 @@ function App() {
     { path: "/member", element: <Member /> },
     { path: "/contact", element: <Contact /> },
     { path: "/profile", element: <Profile /> },
+    { path: "/login", element: <Login /> },
   ]);
-
-  let addNav = false;
-
-  const location = useLocation();
-
-  if (location.pathname != "/") {
-    addNav = true;
-  } else {
-    addNav = false;
-  }
 
   return (
     <>
-      {addNav ? <Navbar /> : ""}
-      <div> {routes}</div>
-      <Footer />
+      {!isLoginPage && !isHomePage && <Navbar />}
+      <div>{routes}</div>
+      {!isLoginPage && <Footer />}
     </>
   );
 }
