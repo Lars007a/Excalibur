@@ -5,7 +5,8 @@ import Loading from "../loadingNews/Loading";
 import Modal from "../modalNews/Modal";
 
 const Newsletter = () => {
-  const [inputValue, setInputValue] = useState("");
+  const [responsEmail, setResponsEmail] = useState("");
+  const [inputEmail, setInputValue] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const inputRef = useRef(null);
@@ -31,10 +32,11 @@ const Newsletter = () => {
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email: inputValue }),
+          body: JSON.stringify({ email: inputEmail }),
         }
       );
       const result = await response.json();
+      setResponsEmail(result.email);
       openModal();
       setInputValue("");
       setIsLoading(false);
@@ -49,24 +51,35 @@ const Newsletter = () => {
         <Loading />
       ) : (
         <section className={styles.newsletter}>
-          <form onSubmit={handleSubmit} className={styles.form}>
-            <label>Tilmeld dig vores nyhedsbrev og hold dig opdatered.</label>
-            <input
-              type="email"
-              value={inputValue}
-              onChange={handleInputChange}
-              required
-              ref={inputRef}
-            />
-            <Button buttonText="Tilmeld" type="submit" />
-          </form>
+          <div className={styles.newsletterContainer}>
+            <h3>Tilmeld dig vores nyhedsbrev og hold dig opdatered.</h3>
+            <div className={styles.newsletterContent}>
+              <div className={styles.newsletterImg}>
+                <img src="/Warrior_Run_0.png" alt="player" />
+              </div>
+              <form onSubmit={handleSubmit} className={styles.form}>
+                <label></label>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  value={inputEmail}
+                  onChange={handleInputChange}
+                  required
+                  ref={inputRef}
+                />
+                <Button buttonText="Tilmeld" type="submit" />
+              </form>
+            </div>
+          </div>
         </section>
       )}
 
       {isModalOpen && (
         <Modal onClose={closeModal}>
-          <h2>Thank you for signing up!</h2>
-          <p>We will send you a confirmation email at {inputValue}</p>
+          <h2>Tak fordi du tilmeldte dig!</h2>
+          <p>
+            Vi sender dig en bekræftelsesmail på {responsEmail} {inputEmail}
+          </p>
         </Modal>
       )}
     </>
