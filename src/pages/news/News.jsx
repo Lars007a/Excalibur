@@ -1,6 +1,6 @@
 import NewsInfo from "../../components/newsInfo/NewsInfo";
+import Newsletter from "../../components/newsletter/Newsletter";
 import SectionHeader from "../../components/sectionHeader/SectionHeader";
-
 const News = () => {
   /* const newsImg = [
     "../../../src/assets/galleryImgs/DSC06973.JPG",
@@ -14,7 +14,7 @@ const News = () => {
     <>
       <SectionHeader title={"Nyheder"} />
       <NewsInfo />
-      <SectionHeader />
+      <Newsletter />
     </>
   );
 };
