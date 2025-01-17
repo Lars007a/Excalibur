@@ -95,4 +95,7 @@ li {
   .eventsContent {
     flex-direction: column;
   }
+  .eventsContainer h1 {
+    font-size: 30px;
+  }
 }

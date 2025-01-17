@@ -1,7 +1,7 @@
 .news {
-  background-color: #c26831;
   padding: 50px;
   color: #ffffff;
+  background-color: #c26831;
 }
 
 .news h2 {
@@ -32,11 +32,18 @@
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
 }
 
 .newsContentItem {
   background-color: #c26831;
-  border: 1px solid gray;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.newsContentItem:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
 }
 
 @media screen and (max-width: 768px) {
