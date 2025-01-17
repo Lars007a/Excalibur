@@ -12,12 +12,12 @@ const NewsInfo = () => {
               src="../../../src/assets/galleryImgs/DSC06973.JPG"
               alt="news"
             />
-            <p>08 december 2025</p>
-            <p>
+            <p className={styles.newsDate}>08 december 2025</p>
+            <h3 className={styles.newsTitle}>
               Bliv en del af Excalibur: Alt du skal vide om vores
               rollespilsklub.
-            </p>
-            <p>
+            </h3>
+            <p className={styles.newsText}>
               Er du interesseret i rollespil, eller har du altid drømt om at
               skabe din egen helt og træde ind i fantastiske verdener? Så er...
             </p>
@@ -27,12 +27,12 @@ const NewsInfo = () => {
               src="../../../src/assets/galleryImgs/DSC06961.JPG"
               alt="news"
             />
-            <p>08 december 2025</p>
-            <p>
+            <p className={styles.newsDate}>08 december 2025</p>
+            <h3 className={styles.newsTitle}>
               Bliv en del af Excalibur: Alt du skal vide om vores
               rollespilsklub.
-            </p>
-            <p>
+            </h3>
+            <p className={styles.newsText}>
               Er du interesseret i rollespil, eller har du altid drømt om at
               skabe din egen helt og træde ind i fantastiske verdener? Så er...
             </p>
@@ -42,12 +42,12 @@ const NewsInfo = () => {
               src="../../../src/assets/galleryImgs/DSC06960.JPG"
               alt="news"
             />
-            <p>08 december 2025</p>
-            <p>
+            <p className={styles.newsDate}>08 december 2025</p>
+            <h3 className={styles.newsTitle}>
               Bliv en del af Excalibur: Alt du skal vide om vores
               rollespilsklub.
-            </p>
-            <p>
+            </h3>
+            <p className={styles.newsText}>
               Er du interesseret i rollespil, eller har du altid drømt om at
               skabe din egen helt og træde ind i fantastiske verdener? Så er...
             </p>
@@ -57,12 +57,12 @@ const NewsInfo = () => {
               src="../../../src/assets/galleryImgs/DSC06975.JPG"
               alt="news"
             />
-            <p>08 december 2025</p>
-            <p>
+            <p className={styles.newsDate}>08 december 2025</p>
+            <h3 className={styles.newsTitle}>
               Bliv en del af Excalibur: Alt du skal vide om vores
               rollespilsklub.
-            </p>
-            <p>
+            </h3>
+            <p className={styles.newsText}>
               Er du interesseret i rollespil, eller har du altid drømt om at
               skabe din egen helt og træde ind i fantastiske verdener? Så er...
             </p>
@@ -72,12 +72,12 @@ const NewsInfo = () => {
               src="../../../src/assets/galleryImgs/DSC06978.JPG"
               alt="news"
             />
-            <p>08 december 2025</p>
-            <p>
+            <p className={styles.newsDate}>08 december 2025</p>
+            <h3 className={styles.newsTitle}>
               Bliv en del af Excalibur: Alt du skal vide om vores
               rollespilsklub.
-            </p>
-            <p>
+            </h3>
+            <p className={styles.newsText}>
               Er du interesseret i rollespil, eller har du altid drømt om at
               skabe din egen helt og træde ind i fantastiske verdener? Så er...
             </p>
@@ -87,12 +87,12 @@ const NewsInfo = () => {
               src="../../../src/assets/galleryImgs/DSC06969.JPG"
               alt="news"
             />
-            <p>08 december 2025</p>
-            <p>
+            <p className={styles.newsDate}>08 december 2025</p>
+            <h3 className={styles.newsTitle}>
               Bliv en del af Excalibur: Alt du skal vide om vores
               rollespilsklub.
-            </p>
-            <p>
+            </h3>
+            <p className={styles.newsText}>
               Er du interesseret i rollespil, eller har du altid drømt om at
               skabe din egen helt og træde ind i fantastiske verdener? Så er...
             </p>
