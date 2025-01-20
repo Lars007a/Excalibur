@@ -49,7 +49,7 @@ export default function navar() {
             <NavLink to={"/gallery"}>Galleri</NavLink>
             <NavLink to={"/member"}>Bliv medlem</NavLink>
             <NavLink to={"/contact"}>Kontakt</NavLink>
-            <NavLink to={"/profile"}>
+            <NavLink to={"/login"}>
               <LoginBtn>
                 <p>Login</p>
               </LoginBtn>
