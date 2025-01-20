@@ -1,3 +1,5 @@
+import styles from "../../components/newsInfo/newsInfo.module.css";
+
 export const articlesTeaserTmpl = (article) => (
   <div className={styles.newsContent}>
     <div className={styles.newsContentItem}>

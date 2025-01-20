@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "./newsInfo.module.css";
-import { fetchArticles } from "../fetchArticleData/FetchArticleData.jsx";
-import { articlesTeaserTmpl } from "../articleTemplates/ArticleTemplates.jsx";
+import { fetchArticles } from "../../components/fetchArticleData/FetchArticleData.jsx";
+import { articlesTeaserTmpl } from "../../components/articleTemplates/ArticleTemplates.jsx";
 
 export function NewsInfo() {
   const [articles, setArticles] = useState([]);
