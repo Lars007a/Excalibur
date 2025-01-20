@@ -11,6 +11,7 @@ import Login from "./pages/login/Login.jsx";
 import { useRoutes, useLocation } from "react-router-dom";
 import Footer from "./components/footer/Footer.jsx";
 import Navbar from "./components/navbar/navbar.jsx";
+import Article from "./pages/article/Article.jsx";
 
 function App() {
   const location = useLocation();
@@ -24,6 +25,7 @@ function App() {
   const routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/news", element: <News /> },
+    { path: "/article/:id", element: <Article /> },
     { path: "/arrangements", element: <Arrangements /> },
     { path: "/info", element: <Info /> },
     { path: "/gallery", element: <Gallery /> },
