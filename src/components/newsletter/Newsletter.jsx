@@ -77,9 +77,7 @@ const Newsletter = () => {
       {isModalOpen && (
         <Modal onClose={closeModal}>
           <h2>Tak fordi du tilmeldte dig!</h2>
-          <p>
-            Vi sender dig en bekræftelsesmail på {responsEmail} {inputEmail}
-          </p>
+          <p>Vi sender dig en bekræftelsesmail {responsEmail}</p>
         </Modal>
       )}
     </>
