@@ -1,6 +1,11 @@
 import styles from "./newsInfo.module.css";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import articlesData from "../../data/articles.json";
+=======
+import { fetchArticles } from "../fetchArticleData/FetchArticleData.jsx";
+import { ArticlesTeaserTmpl } from "./templates.js";
+>>>>>>> Stashed changes
 =======
 import { fetchArticles } from "../fetchArticleData/FetchArticleData.jsx";
 import { ArticlesTeaserTmpl } from "./templates.js";
@@ -11,6 +16,7 @@ const NewsInfo = () => {
     <>
       {/* <section className={styles.news}>
         <h2>Seneste artikler</h2>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 
         <div className={styles.newsContent}>
@@ -107,6 +113,8 @@ const NewsInfo = () => {
         </div>
       </section> */}
 =======
+=======
+>>>>>>> Stashed changes
       </section>
 >>>>>>> Stashed changes
     </>
