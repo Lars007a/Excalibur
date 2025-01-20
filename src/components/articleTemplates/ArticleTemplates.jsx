@@ -1,4 +1,4 @@
-export const ArticlesTeaserTmpl = (article) =>
+export const articlesTeaserTmpl = (article) =>
   ` <div className={styles.newsContent}>
         <div className={styles.newsContentItem}>
             <img src="${article.img}">
@@ -9,7 +9,7 @@ export const ArticlesTeaserTmpl = (article) =>
     </div>
         `;
 
-export const ArticlesTmpl = (article) =>
+export const articlesTmpl = (article) =>
   ` <div class="article">
                       
     <div className={styles.articleContainer}>
