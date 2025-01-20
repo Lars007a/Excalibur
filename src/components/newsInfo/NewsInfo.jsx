@@ -1,9 +1,10 @@
 import styles from "./newsInfo.module.css";
+import articlesData from "../../data/articles.json";
 
 const NewsInfo = () => {
   return (
     <>
-      <section className={styles.news}>
+      {/* <section className={styles.news}>
         <h2>Seneste artikler</h2>
 
         <div className={styles.newsContent}>
@@ -98,7 +99,7 @@ const NewsInfo = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
