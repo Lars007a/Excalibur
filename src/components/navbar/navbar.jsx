@@ -4,8 +4,17 @@ import { NavLink } from "react-router-dom";
 import LoginBtn from "../simpleBtn/simpleBtn.jsx";
 import { useState } from "react";
 
+import { useLocalStorage } from "@uidotdev/usehooks";
+
 export default function navar() {
+  const [savedUser, setSavedUser] = useLocalStorage("savedUser", {});
+
   const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+  const handleLogout = () => {
+    setSavedUser({});
+    return;
+  };
 
   const onHamburgerClick = () => {
     if (showMobileMenu == true) {
@@ -49,11 +58,26 @@ export default function navar() {
             <NavLink to={"/gallery"}>Galleri</NavLink>
             <NavLink to={"/member"}>Bliv medlem</NavLink>
             <NavLink to={"/contact"}>Kontakt</NavLink>
-            <NavLink to={"/login"}>
-              <LoginBtn>
-                <p>Login</p>
-              </LoginBtn>
-            </NavLink>
+
+            {savedUser.loggedIn == true ? (
+              <>
+                <NavLink to={"/profile"} className={styles.profilePicLink}>
+                  <img
+                    src={"/profilePictureSilhouette.png"}
+                    className={styles.profilePic}
+                  ></img>
+                </NavLink>
+                <LoginBtn color="red" clickFunc={handleLogout}>
+                  <p>Logout</p>
+                </LoginBtn>
+              </>
+            ) : (
+              <NavLink to={"/login"}>
+                <LoginBtn>
+                  <p>Login</p>
+                </LoginBtn>
+              </NavLink>
+            )}
           </div>
         </div>
       </nav>

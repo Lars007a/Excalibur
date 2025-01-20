@@ -1,11 +1,10 @@
 .btn {
-  background-color: #005390;
   color: #f5ee19;
   border-radius: 100px;
   outline: none;
   border: none;
   padding: 10px 20px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, filter 0.3s;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-family: "Jacquard 24", serif;
@@ -22,5 +21,5 @@
 }
 
 .btn:hover {
-  background-color: #063b61;
+  filter: saturate(0.6);
 }

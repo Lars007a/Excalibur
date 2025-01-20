@@ -2,7 +2,7 @@ import styles from "./loginCard.module.css";
 import { GiWarlockEye } from "react-icons/gi";
 import { GiVikingHelmet } from "react-icons/gi";
 import { GiKey } from "react-icons/gi";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from "/logo.png";
@@ -10,7 +10,11 @@ import users from "./loginCard.json";
 import ForgotPassword from "../loginForgotPassword/LoginForgotPassword";
 import RegisterAccount from "../loginRegister/LoginRegister";
 
+import { useLocalStorage } from "@uidotdev/usehooks";
+
 const LoginCard = () => {
+  const [savedUser, setSavedUser] = useLocalStorage("savedUser", {});
+
   const [view, setView] = useState("login");
   const [credentials, setCredentials] = useState({
     username: "",
@@ -27,6 +31,7 @@ const LoginCard = () => {
         u.password === credentials.password
     );
     if (user) {
+      setSavedUser({ username: credentials.username, loggedIn: true });
       navigate("/News");
     } else {
       setError("Brugernavn og/eller adgangskode er forkert.");
