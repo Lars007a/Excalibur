@@ -1,5 +1,4 @@
 import styles from "../../components/articleTeaser/articleTeaser.module.css";
-import styles from "../../components/articlePage/ArticlePage.module.css";
 
 export const articlesTeaserTmpl = (article) => (
   <div className={styles.newsContent}>
@@ -13,7 +12,7 @@ export const articlesTeaserTmpl = (article) => (
 );
 
 export const articlesTmpl = (article) => (
-  <div className="article">
+  <div className={styles.article}>
     <div className={styles.articleContainer}>
       <div className={styles.imageContainer}>
         <img src={article.img} alt="article" />

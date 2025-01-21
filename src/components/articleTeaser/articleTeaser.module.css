@@ -58,6 +58,34 @@
   margin-bottom: 15px;
 }
 
+.article {
+  background-image: url(../../assets/notSortedImgs/bagground_img.jpg);
+  background-size: cover;
+}
+
+.articleContainer {
+  background-color: #c26831;
+  padding: 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+.imageContainer {
+}
+.heading {
+}
+.bylineContainer {
+}
+.author {
+}
+.date {
+}
+.bodyTextContainer {
+}
+.bodyTextHeadline {
+}
+.bodyText {
+}
+
 @media screen and (max-width: 768px) {
   .news {
     padding: 20px;
