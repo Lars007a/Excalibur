@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import styles from "./newsInfo.module.css";
-import { fetchArticles } from "../../components/fetchArticleData/FetchArticleData.jsx";
-import { articlesTeaserTmpl } from "../../components/articleTemplates/ArticleTemplates.jsx";
+import { Link } from "react-router-dom";
+import styles from "./articleTeaser.module.css";
+import { fetchArticles } from "../fetchArticleData/FetchArticleData.jsx";
+import { articlesTeaserTmpl } from "../articleTemplates/ArticleTemplates.jsx";
 
-export function NewsInfo() {
+export function ArticleTeaser() {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -36,7 +37,9 @@ export function NewsInfo() {
       <h2>Seneste artikler</h2>
       {articles.length > 0 ? (
         articles.map((article) => (
-          <div key={article.id}>{articlesTeaserTmpl(article)}</div>
+          <Link to={`/article/${article.id}`} key={article.id}>
+            {articlesTeaserTmpl(article)}
+          </Link>
         ))
       ) : (
         <p>No articles available</p>
@@ -45,4 +48,4 @@ export function NewsInfo() {
   );
 }
 
-export default NewsInfo;
+export default ArticleTeaser;
