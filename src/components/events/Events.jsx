@@ -1,4 +1,5 @@
 import styles from "./events.module.css";
+import { Link } from "react-router-dom";
 
 const EventsHero = ({ eventsHeroImg }) => {
   return (
@@ -91,9 +92,13 @@ const EventsHero = ({ eventsHeroImg }) => {
               <h2>Spørgsmål</h2>
               <p className={styles.eventsInfo}>
                 Hvis du har spørgsmål er du altid velkommen til at e-maile eller
-                ringe til os. Du kan finde vores kontaktinformation under
-                Kontakt.
+                ringe til os.
               </p>
+              <Link to="/Contact">
+                <p className={styles.eventsInfo}>
+                  Du kan finde vores kontaktinfomation her.
+                </p>
+              </Link>
             </li>
           </ul>
         </div>
