@@ -46,16 +46,6 @@ export function ArticleTeaser() {
           <p>Ingen artikler fundet.</p>
         )}
       </div>
-
-      {articles.length > 0 ? (
-        articles.map((article) => (
-          <Link to={`/article/${article.id}`} key={article.id}>
-            {articlesTeaserTmpl(article)}
-          </Link>
-        ))
-      ) : (
-        <p>Ingen artikler fundet.</p>
-      )}
     </section>
   );
 }
