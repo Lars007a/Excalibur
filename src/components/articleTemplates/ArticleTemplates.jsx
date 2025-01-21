@@ -1,4 +1,5 @@
 import styles from "../../components/articleTeaser/articleTeaser.module.css";
+import styles from "../../components/articlePage/ArticlePage.module.css";
 
 export const articlesTeaserTmpl = (article) => (
   <div className={styles.newsContent}>
