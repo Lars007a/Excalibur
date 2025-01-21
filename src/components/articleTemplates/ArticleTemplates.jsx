@@ -3,7 +3,7 @@ import styles from "../../components/articleTeaser/articleTeaser.module.css";
 export const articlesTeaserTmpl = (article) => (
   <div className={styles.newsContent}>
     <div className={styles.newsContentItem}>
-      <img src={article.img} alt="article" />
+      <img src={article.img} alt="article image" />
       <p className={styles.newsDate}>{article.date}</p>
       <h3 className={styles.newsTitle}>{article.heading}</h3>
       <p className={styles.newsText}>{article.subheading}</p>
@@ -15,7 +15,7 @@ export const articlesTmpl = (article) => (
   <div className={styles.article}>
     <div className={styles.articleContainer}>
       <div className={styles.imageContainer}>
-        <img src={article.img} alt="article" />
+        <img src={article.img} alt="article image" />
       </div>
       <h1 className={styles.heading}>{article.heading}</h1>
       <div className={styles.bylineContainer}>

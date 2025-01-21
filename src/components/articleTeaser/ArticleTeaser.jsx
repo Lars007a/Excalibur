@@ -25,7 +25,7 @@ export function ArticleTeaser() {
   }, []);
 
   if (loading) {
-    return <p>Loading articles...</p>;
+    return <p>Loader artikler...</p>;
   }
 
   if (error) {
@@ -42,7 +42,7 @@ export function ArticleTeaser() {
           </Link>
         ))
       ) : (
-        <p>No articles available</p>
+        <p>Ingen artikler fundet.</p>
       )}
     </section>
   );
