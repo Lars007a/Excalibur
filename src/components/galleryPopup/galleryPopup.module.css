@@ -20,6 +20,7 @@
   height: 50%;
   width: auto;
   object-fit: cover;
+  cursor: default;
 }
 
 /* @media (max-width: 600px) {
