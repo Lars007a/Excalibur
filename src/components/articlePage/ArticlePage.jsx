@@ -31,14 +31,16 @@ const ArticlePage = () => {
   }, [id]);
 
   if (loading) {
-    return <p>Loading article...</p>;
+    return <p>Loader artikel...</p>;
   }
 
   if (error) {
     return <p>{error}</p>;
   }
 
-  return <div>{article ? articlesTmpl(article) : <p>No article found</p>}</div>;
+  return (
+    <div>{article ? articlesTmpl(article) : <p>Ingen artikel fundet.</p>}</div>
+  );
 };
 
 export default ArticlePage;
