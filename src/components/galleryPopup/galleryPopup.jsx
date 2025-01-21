@@ -4,16 +4,21 @@ import styles from "./galleryPopup.module.css";
 import { useEffect, useState } from "react";
 
 export default function galleryPopup({ closeFunc, imgToShow, imgArray }) {
-  const [img, setImg] = useState(); //Billedet der faktisk bliver vist i popupen.
+  const [img, setImg] = useState(imgToShow); //Billedet der faktisk bliver vist i popupen.
 
   useEffect(() => {
-    //Set billedet til at vise standard billedet, der er givet til denne popup.
-    setImg(imgToShow);
-
     //Funktion til eventlisteneren ved escape, der lukker popupen.
     const handlePress = (event) => {
       if (event.key == "Escape") {
         closeFunc();
+      }
+
+      if (event.key == "ArrowRight") {
+        forward();
+      }
+
+      if (event.key == "ArrowLeft") {
+        back();
       }
       console.log("tryk");
       return;
@@ -27,7 +32,7 @@ export default function galleryPopup({ closeFunc, imgToShow, imgArray }) {
       console.log("removal");
       document.removeEventListener("keydown", handlePress);
     };
-  }, []);
+  }, [img]); //Arrow keys virker ikke hvis den kun kører på initial render.
 
   const forward = () => {
     //Find indekset af billedet der bliver vist.
