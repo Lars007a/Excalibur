@@ -9,18 +9,17 @@ export default function galleryPopup({ closeFunc, imgToShow, imgArray }) {
   useEffect(() => {
     //Funktion til eventlisteneren ved escape, der lukker popupen.
     const handlePress = (event) => {
-      if (event.key == "Escape") {
-        closeFunc();
+      switch (event.key) {
+        case "Escape":
+          closeFunc();
+          break;
+        case "ArrowRight":
+          forward();
+          break;
+        case "ArrowLeft":
+          back();
+          break;
       }
-
-      if (event.key == "ArrowRight") {
-        forward();
-      }
-
-      if (event.key == "ArrowLeft") {
-        back();
-      }
-      console.log("tryk");
       return;
     };
 
@@ -35,6 +34,7 @@ export default function galleryPopup({ closeFunc, imgToShow, imgArray }) {
   }, [img]); //Arrow keys virker ikke hvis den kun kører på initial render.
 
   const forward = () => {
+    console.log("fremad");
     //Find indekset af billedet der bliver vist.
     //Gå derefter en ekstra op, medmindre det er den sidste i arrayen, i sådan et tilfælde gå tilbage til starten.
 
