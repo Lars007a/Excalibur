@@ -21,7 +21,8 @@ const Gallery = () => {
     "../../../src/assets/galleryImgs/DSC06977.JPG",
     "../../../src/assets/galleryImgs/DSC06978.JPG",
     "../../../src/assets/galleryImgs/DSC06982.JPG",
-    "../../../src/assets/galleryImgs/DSC06914.JPG",
+    "../../../src/assets/galleryImgs/DSC06999.JPG",
+    "../../../src/assets/galleryImgs/DSC07014.JPG",
     "../../../src/assets/galleryImgs/DSC07023.JPG",
     "../../../src/assets/galleryImgs/samlet.jpg",
   ];
