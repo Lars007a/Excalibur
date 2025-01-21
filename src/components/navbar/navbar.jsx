@@ -30,7 +30,10 @@ export default function navar() {
         <div className={styles.navContainer}>
           <div className={styles.navLogo}>
             <NavLink to={"/"}>
-              <img src="/logo.png" alt="logo"></img>
+              <img
+                src="../../../src/assets/notSortedImgs/logo_smaller.png"
+                alt="logo"
+              ></img>
             </NavLink>
           </div>
 
