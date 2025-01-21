@@ -2,6 +2,7 @@
   padding: 70px;
   color: #ffffff;
   background-color: #c26831;
+  text-decoration: none;
 }
 
 .news h2 {
@@ -20,6 +21,10 @@
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 40px;
+}
+
+.news a {
+  text-decoration: none;
 }
 
 .newsContent img {
@@ -49,13 +54,17 @@
 .newsTitle {
   font-size: 25px;
   font-family: "Irish Grover", serif;
-  padding: 15px;
+  padding: 0px 15px;
+
+  color: white;
 }
 .newsText {
   font-size: 18px;
-  font-family: "Irish Grover", serif;
+  font-family: "Quicksand", serif;
   padding: 15px;
   margin-bottom: 15px;
+
+  color: white;
 }
 
 .article {
@@ -108,14 +117,17 @@
   font-size: 18px;
   font-family: "Irish Grover", serif;
   color: #005390;
-  padding: 15px;
+  padding: 15px 0px;
 }
-.bodyTextContainer {
+
+.date {
+  margin-left: 10px;
 }
+
 .bodyTextHeadline {
   font-size: 24px;
   font-family: "Irish Grover", serif;
-  padding: 15px;
+  padding: 15px 0px;
   margin-bottom: 10px;
 }
 .bodyText {
