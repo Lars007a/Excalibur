@@ -17,16 +17,19 @@ export const articlesTmpl = (article) => (
       <div className={styles.imageContainer}>
         <img src={article.img} alt="article image" />
       </div>
-      <h1 className={styles.heading}>{article.heading}</h1>
-      <div className={styles.bylineContainer}>
-        <p className={styles.author}> af {article.author} |</p>
-        <p className={styles.date}>{article.date}</p>
-      </div>
-      <div className={styles.bodyTextContainer}>
-        <p className={styles.bodyTextHeadline}>{article.bodyTextHeadline1}</p>
-        <p className={styles.bodyText}>{article.bodyText1}</p>
-        <p className={styles.bodyTextHeadline}>{article.bodyTextHeadline2}</p>
-        <p className={styles.bodyText}>{article.bodyText2}</p>
+
+      <div className={styles.articleTextContainer}>
+        <h1 className={styles.heading}>{article.heading}</h1>
+        <div className={styles.bylineContainer}>
+          <p className={styles.author}> af {article.author} |</p>
+          <p className={styles.date}>{article.date}</p>
+        </div>
+        <div className={styles.bodyTextContainer}>
+          <p className={styles.bodyTextHeadline}>{article.bodyTextHeadline1}</p>
+          <p className={styles.bodyText}>{article.bodyText1}</p>
+          <p className={styles.bodyTextHeadline}>{article.bodyTextHeadline2}</p>
+          <p className={styles.bodyText}>{article.bodyText2}</p>
+        </div>
       </div>
     </div>
   </div>
