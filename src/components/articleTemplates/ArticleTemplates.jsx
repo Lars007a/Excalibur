@@ -17,7 +17,6 @@ export const articlesTmpl = (article) => (
       <div className={styles.imageContainer}>
         <img src={article.img} alt="article image" />
       </div>
-
       <div className={styles.articleTextContainer}>
         <h1 className={styles.heading}>{article.heading}</h1>
         <div className={styles.bylineContainer}>
