@@ -49,6 +49,8 @@ h2 {
   font-family: "Inder", serif;
   margin-bottom: 15px;
   line-height: 1.5;
+  color: white;
+  text-decoration: none;
 }
 
 .playerImg {

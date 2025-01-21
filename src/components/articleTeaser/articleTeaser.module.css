@@ -76,18 +76,24 @@
   padding: 30px 70px 150px 70px;
 }
 
+.articleTextContainer {
+  background-color: #c26831;
+}
+
 .imageContainer {
   width: 100%;
   height: 450px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 .imageContainer img {
   width: 100%;
   height: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 .heading {
   font-size: 50px;
   font-weight: 300;
