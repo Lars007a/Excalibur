@@ -15,7 +15,13 @@ export default function galleryGrid({ imgArray }) {
               </p>
             ) : (
               imgArray.map((element, index) => {
-                return <GalleryImg img={element} key={index} />;
+                return (
+                  <GalleryImg
+                    imgToShow={element}
+                    imgArray={imgArray}
+                    key={index}
+                  />
+                );
               })
             )}
           </div>
