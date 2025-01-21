@@ -35,15 +35,17 @@ export function ArticleTeaser() {
   return (
     <section className={styles.news}>
       <h2>Seneste artikler</h2>
-      {articles.length > 0 ? (
-        articles.map((article) => (
-          <Link to={`/article/${article.id}`} key={article.id}>
-            {articlesTeaserTmpl(article)}
-          </Link>
-        ))
-      ) : (
-        <p>Ingen artikler fundet.</p>
-      )}
+      <div className={styles.articleGrid}>
+        {articles.length > 0 ? (
+          articles.map((article) => (
+            <Link to={`/article/${article.id}`} key={article.id}>
+              {articlesTeaserTmpl(article)}
+            </Link>
+          ))
+        ) : (
+          <p>Ingen artikler fundet.</p>
+        )}
+      </div>
     </section>
   );
 }
