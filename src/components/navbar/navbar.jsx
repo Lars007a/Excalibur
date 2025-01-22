@@ -3,6 +3,7 @@ import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
 import LoginBtn from "../simpleBtn/simpleBtn.jsx";
 import { useState } from "react";
+import ProfileCardEditor from "../../components/profileCardEditor/ProfileCardEditor.jsx";
 
 import { useLocalStorage } from "@uidotdev/usehooks";
 
@@ -30,7 +31,10 @@ export default function navar() {
         <div className={styles.navContainer}>
           <div className={styles.navLogo}>
             <NavLink to={"/"}>
-              <img src="/logo.png" alt="logo"></img>
+              <img
+                src="../../../src/assets/notSortedImgs/logo_smaller.png"
+                alt="logo"
+              ></img>
             </NavLink>
           </div>
 
@@ -67,7 +71,7 @@ export default function navar() {
                     className={styles.profilePic}
                   ></img>
                 </NavLink>
-                <LoginBtn color="red" clickFunc={handleLogout}>
+                <LoginBtn color="#005390" clickFunc={handleLogout}>
                   <p>Logout</p>
                 </LoginBtn>
               </>
