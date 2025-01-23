@@ -1,0 +1,9 @@
+.homePatchRiver {
+  width: 100%;
+  background-image: url(../../assets/notSortedImgs/river.png);
+  background-position: center;
+  background-size: cover;
+  height: 1600px;
+  position: relative;
+  z-index: 2;
+}

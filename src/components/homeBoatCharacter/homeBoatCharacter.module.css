@@ -1,0 +1,52 @@
+.BoatCharacterContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  z-index: 3;
+  right: 400px;
+}
+
+.BoatCharacter {
+  width: 700px;
+  display: block;
+  z-index: 1;
+}
+
+.ScrollHide {
+  opacity: 0;
+}
+
+.ScrollShow {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1496px) {
+  .BoatCharacter {
+    max-width: 600px;
+    transition: all 250ms ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .BoatCharacter {
+    max-width: 550px;
+    transition: all 250ms ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .BoatCharacter {
+    max-width: 500px;
+    transition: all 250ms ease-in-out;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .BoatCharacter {
+    max-width: 450px;
+    transition: all 250ms ease-in-out;
+  }
+}
