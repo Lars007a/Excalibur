@@ -8,7 +8,35 @@
 }
 
 .walkcycle {
-  max-width: 150px;
+  max-width: 200px;
   display: block;
   z-index: 1;
+}
+
+@media screen and (max-width: 1496px) {
+  .walkcycle {
+    max-width: 180px;
+    transition: all 250ms ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .walkcycle {
+    max-width: 150px;
+    transition: all 250ms ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .walkcycle {
+    max-width: 120px;
+    transition: all 250ms ease-in-out;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .walkcycle {
+    max-width: 100px;
+    transition: all 250ms ease-in-out;
+  }
 }

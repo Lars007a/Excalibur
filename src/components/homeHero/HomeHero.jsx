@@ -18,11 +18,11 @@ const HomeHero = () => {
 
       {savedUser.loggedIn == true ? (
         <Link className={styles.loginBtn} onClick={handleLogout}>
-          Logout
+          Log ud
         </Link>
       ) : (
         <Link to="/Login" className={styles.loginBtn}>
-          Login
+          Log ind
         </Link>
       )}
       <img
