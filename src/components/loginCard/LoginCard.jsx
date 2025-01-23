@@ -32,7 +32,11 @@ const LoginCard = () => {
         u.password === credentials.password
     );
     if (user) {
-      setSavedUser({ username: credentials.username, loggedIn: true });
+      setSavedUser({
+        username: credentials.username,
+        loggedIn: true,
+        img: "/profilePictureSilhouette.png",
+      });
       navigate("/News");
     } else {
       setError("Brugernavn og/eller adgangskode er forkert.");
