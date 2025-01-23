@@ -72,13 +72,13 @@ export default function navar() {
                   ></img>
                 </NavLink>
                 <LoginBtn color="#005390" clickFunc={handleLogout}>
-                  <p>Logout</p>
+                  <p>Log ud</p>
                 </LoginBtn>
               </>
             ) : (
               <NavLink to={"/login"}>
                 <LoginBtn>
-                  <p>Login</p>
+                  <p>Log ind</p>
                 </LoginBtn>
               </NavLink>
             )}
