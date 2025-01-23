@@ -66,10 +66,7 @@ export default function navar() {
             {savedUser.loggedIn == true ? (
               <>
                 <NavLink to={"/profile"} className={styles.profilePicLink}>
-                  <img
-                    src={"/profilePictureSilhouette.png"}
-                    className={styles.profilePic}
-                  ></img>
+                  <img src={savedUser.img} className={styles.profilePic}></img>
                 </NavLink>
                 <LoginBtn color="#005390" clickFunc={handleLogout}>
                   <p>Log ud</p>

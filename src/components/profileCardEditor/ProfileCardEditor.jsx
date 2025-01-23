@@ -4,9 +4,11 @@ import { MdCancel } from "react-icons/md";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import styles from "./profileCardEditor.module.css";
 import profilePicSilhouette from "../../assets/notSortedImgs/profilePictureSilhouette.png";
+import { useLocalStorage } from "@uidotdev/usehooks";
 
 const ProfileCardEditor = () => {
-  const [profileImage, setProfileImage] = useState(profilePicSilhouette);
+  const [savedUser, setSavedUser] = useLocalStorage("savedUser", {});
+  const [profileImage, setProfileImage] = useState(savedUser.img);
   const fileInputRef = useRef();
 
   const [fields, setFields] = useState({
@@ -25,7 +27,14 @@ const ProfileCardEditor = () => {
     const file = e.target.files[0];
     if (file) {
       const reader = new FileReader();
-      reader.onload = (event) => setProfileImage(event.target.result);
+      reader.onload = (event) => {
+        setProfileImage(event.target.result);
+        setSavedUser({
+          username: savedUser.username,
+          loggedIn: savedUser.loggedIn,
+          img: event.target.result,
+        });
+      };
       reader.readAsDataURL(file);
     }
   };
