@@ -3,6 +3,9 @@
 .eventsHero {
   padding-top: 100px;
   padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .eventsContainer {

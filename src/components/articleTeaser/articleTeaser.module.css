@@ -73,6 +73,7 @@
   background-image: url(../../assets/notSortedImgs/bagground_img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   padding-top: 150px;
 }
 
