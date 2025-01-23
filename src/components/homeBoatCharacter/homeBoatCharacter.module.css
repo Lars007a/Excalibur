@@ -28,25 +28,60 @@
     max-width: 600px;
     transition: all 250ms ease-in-out;
   }
+
+  .BoatCharacterContainer {
+    right: 280px;
+    transition: all 250ms ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1383px) {
+  .BoatCharacterContainer {
+    right: 200px;
+    transition: all 250ms ease-in-out;
+  }
 }
 
 @media screen and (max-width: 1180px) {
   .BoatCharacter {
     max-width: 550px;
+
+    transition: all 250ms ease-in-out;
+  }
+
+  .BoatCharacterContainer {
+    right: 140px;
     transition: all 250ms ease-in-out;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  .BoatCharacter {
-    max-width: 500px;
+  .BoatCharacterContainer {
+    right: 50px;
     transition: all 250ms ease-in-out;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .BoatCharacter {
-    max-width: 450px;
+    max-width: 500px;
+    transition: all 250ms ease-in-out;
+  }
+
+  .BoatCharacterContainer {
+    right: 0px;
+    transition: all 250ms ease-in-out;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .BoatCharacter {
+    max-width: 500px;
+    transition: all 250ms ease-in-out;
+  }
+
+  .BoatCharacterContainer {
+    left: 260px;
     transition: all 250ms ease-in-out;
   }
 }

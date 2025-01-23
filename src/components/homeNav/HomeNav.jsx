@@ -7,13 +7,11 @@ const HomeNav = () => {
       <div className={styles.navLeftRow}>
         <Link to="/News">Nyheder</Link>
         <Link to="/Arrangements">Arrangementer</Link>
-        <Link to="/Info">Info</Link>
       </div>
 
       <div className={styles.navRightRow}>
+        <Link to="/Info">Info</Link>
         <Link to="/Gallery">Gallery</Link>
-        <Link to="/Member">Bliv medlem</Link>
-        <Link to="/Contact">Kontakt</Link>
       </div>
     </nav>
   );
