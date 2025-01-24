@@ -58,3 +58,9 @@
 .openingHours {
   margin-top: 20px;
 }
+
+@media screen and (max-width: 539px) {
+  .contactRow {
+    gap: 105px;
+  }
+}

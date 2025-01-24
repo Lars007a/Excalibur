@@ -133,6 +133,7 @@
   .profileInputs {
     align-items: center;
     justify-content: center;
+    column-gap: 30px;
   }
 
   .profileInput {
